@@ -45,7 +45,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\InteractionRay.cs" />
+     <Compile Include="Assets\InputController.cs" />
+     <Compile Include="Assets\Scripts\Computer\ActiveZone.cs" />
+     <Compile Include="Assets\Scripts\Computer\ComputerController.cs" />
+     <Compile Include="Assets\Scripts\Sharon\InteractionTrigger.cs" />
+     <Compile Include="Assets\Scripts\Text\FaceCamera.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Prefabs\Office Set\readme.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

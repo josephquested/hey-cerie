@@ -6,14 +6,14 @@ public class InteractionTrigger : MonoBehaviour {
 
 	void OnTriggerEnter (Collider collider) {
 		if (collider.CompareTag("Computer")) {
-			collider.SendMessageUpwards("ActivateUseText", true);
+			collider.SendMessageUpwards("ToggleInteractionTrigger", true);
 			target = collider.gameObject;
 		}
 	}
 
 	void OnTriggerExit (Collider collider) {
 		if (collider.CompareTag("Computer")) {
-			collider.SendMessageUpwards("ActivateUseText", false);
+			collider.SendMessageUpwards("ToggleInteractionTrigger", false);
 			target = null;
 		}
 	}

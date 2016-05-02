@@ -2,17 +2,17 @@
 using System.Collections;
 
 public class ActiveZone : MonoBehaviour {
-	public bool active;
+	[SerializeField] ComputerController computerController;
 
 	void OnTriggerEnter (Collider collider) {
-		if (collider.CompareTag("Sharon")) {
-			active = true;
+		if (collider.CompareTag("Cerie")) {
+			computerController.ToggleActiveZone(true);
 		}
 	}
 
 	void OnTriggerExit (Collider collider) {
-		if (collider.CompareTag("Sharon")) {
-			active = false;
+		if (collider.CompareTag("Cerie")) {
+			computerController.ToggleActiveZone(false);
 		}
 	}
 }

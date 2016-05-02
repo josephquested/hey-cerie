@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class ComputerController : MonoBehaviour {
-	[SerializeField] GameObject useText;
+	public Transform cameraTransform;
 	[SerializeField] Collider activeZone;
-
+	[SerializeField] GameObject useText;
 	[SerializeField] bool inTrigger;
 	[SerializeField] bool inZone;
 
@@ -18,6 +18,10 @@ public class ComputerController : MonoBehaviour {
 		} else {
 			useText.SetActive(false);
 		}
+	}
+
+	public void Use () {
+		print("use!");
 	}
 
 	public void ToggleInteractionTrigger (bool state) {

@@ -45,10 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Cerie\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Cerie\InputController.cs" />
+     <Compile Include="Assets\Scripts\Cerie\InteractionController.cs" />
+     <Compile Include="Assets\Scripts\Cerie\InteractionTrigger.cs" />
      <Compile Include="Assets\Scripts\Computer\ActiveZone.cs" />
      <Compile Include="Assets\Scripts\Computer\ComputerController.cs" />
-     <Compile Include="Assets\Scripts\InputController.cs" />
-     <Compile Include="Assets\Scripts\Sharon\InteractionTrigger.cs" />
      <Compile Include="Assets\Scripts\Text\FaceCamera.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Prefabs\Office Set\readme.txt" />

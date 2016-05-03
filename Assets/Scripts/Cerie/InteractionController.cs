@@ -24,6 +24,10 @@ public class InteractionController : MonoBehaviour {
 	public void UseComputer (GameObject computer) {
 		ComputerController computerController = computer.GetComponent<ComputerController>();
 
+		if (!computerController.inZone) {
+			return;
+		}
+
 		stateController.CanMove(false);
 		stateController.SetActiveComputer(computer, true);
 		cameraController.SetCamera(computerController.camera, true);

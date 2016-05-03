@@ -6,8 +6,8 @@ public class ComputerController : MonoBehaviour {
 	[SerializeField] GameObject useText;
 
 	public Camera camera;
+	public bool inZone;
 	[SerializeField] bool inTrigger;
-	[SerializeField] bool inZone;
 	[SerializeField] bool inUse;
 
 	void Update () {

@@ -7,8 +7,8 @@ public class ComputerController : MonoBehaviour {
 
 	public Camera camera;
 	public bool inZone;
+	public bool inUse;
 	[SerializeField] bool inTrigger;
-	[SerializeField] bool inUse;
 
 	void Update () {
 		ControlUseText();

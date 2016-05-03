@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\Cerie\StateController.cs" />
      <Compile Include="Assets\Scripts\Computer\ActiveZone.cs" />
      <Compile Include="Assets\Scripts\Computer\ComputerController.cs" />
+     <Compile Include="Assets\Scripts\Computer\CursorController.cs" />
      <Compile Include="Assets\Scripts\Text\FaceCamera.cs" />
      <Compile Include="Assets\Scripts\Utility\ActivateTrigger.cs" />
      <Compile Include="Assets\Scripts\Utility\AutoMobileShaderSwitch.cs" />

@@ -2,8 +2,15 @@
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
+	[SerializeField] Camera mainCamera;
 
-	public void SetPosition (Transform cameraTransform) {
-		transform.position = cameraTransform.position;
+	public void SetCamera (Camera newCamera, bool active) {
+		if (active) {
+			newCamera.enabled = true;
+			mainCamera.enabled = false;
+		} else {
+			newCamera.enabled = false;
+			mainCamera.enabled = true;
+		}
 	}
 }

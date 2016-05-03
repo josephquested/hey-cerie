@@ -19,10 +19,6 @@ public class InteractionTrigger : MonoBehaviour {
 	}
 
 	public GameObject GetTarget () {
-		if (target != null) {
-			return target;
-		} else {
-			return null;
-		}
+		return target;
 	}
 }

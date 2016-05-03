@@ -2,26 +2,32 @@ using UnityEngine;
 using System.Collections;
 
 public class ComputerController : MonoBehaviour {
-	public Transform cameraTransform;
 	[SerializeField] Collider activeZone;
 	[SerializeField] GameObject useText;
+
+	public Camera camera;
 	[SerializeField] bool inTrigger;
 	[SerializeField] bool inZone;
+	[SerializeField] bool inUse;
 
 	void Update () {
 		ControlUseText();
 	}
 
+	public void Use () {
+		inUse = true;
+	}
+
+	public void StopUse () {
+		inUse = false;
+	}
+
 	void ControlUseText () {
-		if (inTrigger && inZone) {
+		if (inTrigger && inZone && !inUse) {
 			useText.SetActive(true);
 		} else {
 			useText.SetActive(false);
 		}
-	}
-
-	public void Use () {
-		print("use!");
 	}
 
 	public void ToggleInteractionTrigger (bool state) {

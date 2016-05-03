@@ -46,25 +46,47 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Cerie\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Cerie\FirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Cerie\InputController.cs" />
      <Compile Include="Assets\Scripts\Cerie\InteractionController.cs" />
      <Compile Include="Assets\Scripts\Cerie\InteractionTrigger.cs" />
+     <Compile Include="Assets\Scripts\Cerie\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\Scripts\Cerie\StateController.cs" />
      <Compile Include="Assets\Scripts\Computer\ActiveZone.cs" />
      <Compile Include="Assets\Scripts\Computer\ComputerController.cs" />
      <Compile Include="Assets\Scripts\Text\FaceCamera.cs" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <Compile Include="Assets\Scripts\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\Scripts\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\Scripts\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Scripts\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\Scripts\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\Scripts\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\Scripts\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\Scripts\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\Scripts\Utility\FOVKick.cs" />
+     <Compile Include="Assets\Scripts\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\Scripts\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\Scripts\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\Scripts\Utility\HeadBob.cs" />
+     <Compile Include="Assets\Scripts\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\Scripts\Utility\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\Scripts\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\Scripts\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\Scripts\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\Scripts\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\Scripts\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\Scripts\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\Scripts\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\Scripts\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\Scripts\Utility\WaypointProgressTracker.cs" />
      <None Include="Assets\Prefabs\Office Set\readme.txt" />
-     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{617EF33A-219B-C126-C893-63DBA3BF6880}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

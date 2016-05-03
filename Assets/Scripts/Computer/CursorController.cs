@@ -22,10 +22,9 @@ public class CursorController : MonoBehaviour {
 	}
 
 	void OnTriggerExit (Collider collider) {
-		print(collider);
-		if (collider.CompareTag("Desktop")) {
-			transform.localPosition = lastPosition;
+		if (collider.CompareTag("Screen")) {
 			print("edge!");
+			transform.localPosition = lastPosition;
 		}
 	}
 }

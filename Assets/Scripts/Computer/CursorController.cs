@@ -15,4 +15,10 @@ public class CursorController : MonoBehaviour {
 			transform.Translate(new Vector3(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"), 0) * Time.deltaTime * speed);
 		}
 	}
+
+	void OnTriggerStay (Collider collider) {
+		if (collider.CompareTag("Folder")) {
+			print(collider.gameObject);
+		}
+	}
 }

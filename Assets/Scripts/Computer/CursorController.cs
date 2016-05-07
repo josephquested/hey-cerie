@@ -4,12 +4,25 @@ using System.Collections;
 public class CursorController : MonoBehaviour {
 	[SerializeField] ComputerController computerController;
 	[SerializeField] GameObject activeFolder;
+	[SerializeField] FolderController folderController;
 	[SerializeField] float speed = 1.0f;
 	[SerializeField] bool canMove;
 
   void Update () {
 		ControlMouseMovement();
   }
+
+	public void Click () {
+		if (folderController) {
+			folderController.Click();
+		}
+	}
+
+	public void DoubleClick () {
+		if (folderController) {
+			folderController.DoubleClick();
+		}
+	}
 
 	void ControlMouseMovement () {
 		if (computerController.inUse && canMove) {
@@ -20,12 +33,14 @@ public class CursorController : MonoBehaviour {
 	void OnTriggerEnter (Collider collider) {
 		if (collider.CompareTag("Folder")) {
 			activeFolder = collider.gameObject;
+			folderController = activeFolder.GetComponent<FolderController>();
 		}
 	}
 
 	void OnTriggerExit (Collider collider) {
 		if (collider.CompareTag("Folder")) {
 			activeFolder = null;
+			folderController = null;
 		}
 	}
 }

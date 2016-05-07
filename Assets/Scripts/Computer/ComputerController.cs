@@ -5,6 +5,7 @@ public class ComputerController : MonoBehaviour {
 	[SerializeField] Collider activeZone;
 	[SerializeField] GameObject useText;
 	[SerializeField] bool inTrigger;
+	[SerializeField] CursorController cursorController;
 
 	public Camera computerCamera;
 	public bool inZone;
@@ -20,6 +21,14 @@ public class ComputerController : MonoBehaviour {
 
 	public void StopUse () {
 		inUse = false;
+	}
+
+	public void Click () {
+		cursorController.Click();
+	}
+
+	public void DoubleClick () {
+		cursorController.DoubleClick();
 	}
 
 	void ControlUseText () {

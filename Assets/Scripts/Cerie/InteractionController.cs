@@ -23,23 +23,15 @@ public class InteractionController : MonoBehaviour {
 	}
 
 	public void Click () {
-		// // if currently using computer
-		// if (stateController.activeComputer != null) {
-		// 	activeComputer.Click();
-		// 	return;
-		// }
-		//
-		// GameObject target = interactionTrigger.GetTarget();
-		// if (target != null) {
-		// 	if (target.CompareTag("Computer")) {
-		// 		UseComputer(target);
-		// 	}
-		// }
-		// print("click!");
+		if (computerController != null) {
+			computerController.Click();
+		}
 	}
 
 	public void DoubleClick () {
-		print("double click!");
+		if (computerController != null) {
+			computerController.DoubleClick();
+		}
 	}
 
 	public void UseComputer (GameObject computer) {

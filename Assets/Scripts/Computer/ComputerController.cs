@@ -4,11 +4,11 @@ using System.Collections;
 public class ComputerController : MonoBehaviour {
 	[SerializeField] Collider activeZone;
 	[SerializeField] GameObject useText;
+	[SerializeField] bool inTrigger;
 
-	public Camera camera;
+	public Camera computerCamera;
 	public bool inZone;
 	public bool inUse;
-	[SerializeField] bool inTrigger;
 
 	void Update () {
 		ControlUseText();

@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Cerie\RigidbodyFirstPersonController.cs" />
      <Compile Include="Assets\Scripts\Cerie\StateController.cs" />
      <Compile Include="Assets\Scripts\Computer\ActiveZone.cs" />
+     <Compile Include="Assets\Scripts\Computer\ClickController.cs" />
      <Compile Include="Assets\Scripts\Computer\ComputerController.cs" />
      <Compile Include="Assets\Scripts\Computer\CursorController.cs" />
      <Compile Include="Assets\Scripts\Computer\FolderController.cs" />

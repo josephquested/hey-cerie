@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CursorController : MonoBehaviour {
 	[SerializeField] ComputerController computerController;
+	[SerializeField] GameObject activeFolder;
 	[SerializeField] float speed = 1.0f;
 	[SerializeField] bool canMove;
 
@@ -16,9 +17,15 @@ public class CursorController : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerStay (Collider collider) {
+	void OnTriggerEnter (Collider collider) {
 		if (collider.CompareTag("Folder")) {
-			print(collider.gameObject);
+			activeFolder = collider.gameObject;
+		}
+	}
+
+	void OnTriggerExit (Collider collider) {
+		if (collider.CompareTag("Folder")) {
+			activeFolder = null;
 		}
 	}
 }
